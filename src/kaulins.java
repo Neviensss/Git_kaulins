@@ -15,6 +15,7 @@ public class kaulins {
 	
 	public static void main(String[] args) {
 		System.out.println("Sveiki");
+		//dsfsdgdf
 		Scanner dati = new Scanner(System.in);
 		int reizes;
 		do{
