@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -19,12 +22,42 @@ public class kaulins {
 	
 	public static void main(String[] args) {
 		Scanner dati = new Scanner(System.in);
-		int reizes;
+		int reizes, izvele;
+		List<Integer> pedejie = new ArrayList<Integer>();
 		do{
-		System.out.print("Cik reizes mest kauliņu?: ");
+System.out.println("1-Mest kaulinu | 2- Apskatit pedejos| 3- Apturet");
+izvele = dati.nextInt();
+switch(izvele){
+case 1: 
+	do{
+		System.out.println("Cik reizes metisi");
 		reizes = dati.nextInt();
-		}while(reizes<1);
-		mestKaulinu(reizes);
-				dati.close();
+		
+	}while(reizes<1);
+	pedejie = mestKaulinu(reizes);
+	break;
+case 2:
+	System.out.println("Pedeja metiena skaitli ir");
+	for(int i=0; i<pedejie.size(); i++){
+		pedejie.get(i);
 	}
+	break;
+case 3:
+	int lielakais =0;
+	for(int i=0; i<pedejie<size(); i++){
+		if(pedejie.get(i)>lielakais){
+			lielakais = pedejie.get(i);
+			
+		}
+		System.out.println("Lielakais skaitlis pedeja metiena ir "+lielakais);
+		break;
+	}
+		case 4:
+			System.out.println("Programma aptureta");
+			break;
+	}
+
+}while(izvele!=2);
+dati.close();
+		}
 }
