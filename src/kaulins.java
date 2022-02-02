@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class kaulins {
 
-	static void mestKaulinu(int reizes){
+	static List<Integer> mestKaulinu(int reizes){
 		int skaitlis, lielakais=0;
 		Random rand = new Random();
 		
@@ -18,6 +18,7 @@ public class kaulins {
 		}
 		}
 		System.out.println("Lielākais skaitlis ir: "+lielakais);
+		return null;
 	}
 	
 	public static void main(String[] args) {
@@ -44,7 +45,7 @@ case 2:
 	break;
 case 3:
 	int lielakais =0;
-	for(int i=0; i<pedejie<size(); i++){
+	for(int i=0; i<pedejie.size(); i++){
 		if(pedejie.get(i)>lielakais){
 			lielakais = pedejie.get(i);
 			
@@ -60,4 +61,7 @@ case 3:
 }while(izvele!=2);
 dati.close();
 		}
-}
+
+	
+	}
+
